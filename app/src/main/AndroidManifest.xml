@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Ahen"
         tools:targetApi="31">
         <activity
+            android:name=".describe_yourself"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
