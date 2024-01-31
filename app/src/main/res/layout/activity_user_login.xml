@@ -14,11 +14,11 @@
         android:id="@+id/userLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="User Login"
         android:gravity="center"
-        android:textSize="28dp"
         android:padding="8dp"
-        />
+        android:text="User Login"
+        android:textSize="28dp" />
+
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/userEmail"
         android:layout_width="match_parent"
@@ -26,8 +26,10 @@
         android:hint="@string/email"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:minWidth="100dp"
+        android:minHeight="48dp"
         />
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/userPassword"
@@ -38,8 +40,11 @@
         android:layout_marginEnd="12dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:minWidth="100dp"
+        android:minHeight="48dp"
         />
 
+    
     <Button
         android:id="@+id/userLoginBtn"
         android:layout_width="match_parent"
@@ -47,6 +52,12 @@
         android:text="Login"
         android:layout_margin="16dp"
         android:textSize="20dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
         />
     <TextView
         android:id="@+id/createAcc"

@@ -19,9 +19,6 @@
             android:name=".user_signUp"
             android:exported="false" />
         <activity
-            android:name=".signUp"
-            android:exported="false" />
-        <activity
             android:name=".user_login"
             android:exported="false" />
         <activity

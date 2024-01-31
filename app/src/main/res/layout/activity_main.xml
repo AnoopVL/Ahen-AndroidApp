@@ -11,11 +11,12 @@
         android:id="@+id/imageView"
         android:layout_width="207dp"
         android:layout_height="272dp"
-        android:layout_marginTop="132dp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img"/>
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
         android:id="@+id/textView"
@@ -28,30 +29,36 @@
         android:text="Book Your Virtual Driving School Session Right Now!!"
 
         android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.014" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="275dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:text="Get Started"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="@color/lightBlue"
-        app:layout_constraintTop_toBottomOf="@+id/text2"
-        tools:layout_editor_absoluteX="69dp" />
+        android:text="Get Started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="8dp"
         android:text="with"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/text2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -59,10 +66,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
         android:text="AHEN"
         android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
