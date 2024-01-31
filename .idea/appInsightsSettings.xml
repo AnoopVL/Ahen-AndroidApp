@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.avl.ahen" />
+                  <option name="mobileSdkAppId" value="1:273356725385:android:a488a0c8039044c8e93a58" />
+                  <option name="projectId" value="ahen-c4bee" />
+                  <option name="projectNumber" value="273356725385" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

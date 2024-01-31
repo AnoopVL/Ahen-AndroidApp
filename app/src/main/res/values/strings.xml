@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ahen</string>
+    <string name="email">Enter your email</string>
+    <string name="password">Enter your password</string>
 </resources>

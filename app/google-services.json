@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "273356725385",
+    "project_id": "ahen-c4bee",
+    "storage_bucket": "ahen-c4bee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273356725385:android:a488a0c8039044c8e93a58",
+        "android_client_info": {
+          "package_name": "com.avl.ahen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJMXqkuouDi8F4fc0RUs14t3CxPB7EuoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
