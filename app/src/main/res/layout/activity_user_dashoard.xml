@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-
+    android:background="@color/black"
     tools:context=".userDashoard">
 
     <TextView
@@ -19,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_margin="20dp"
         android:textSize="16dp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
