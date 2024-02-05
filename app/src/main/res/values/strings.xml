@@ -2,4 +2,6 @@
     <string name="app_name">Ahen</string>
     <string name="email">Enter your email</string>
     <string name="password">Enter your password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
