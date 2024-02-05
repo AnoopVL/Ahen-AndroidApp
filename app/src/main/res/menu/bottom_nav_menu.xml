@@ -14,7 +14,7 @@
     <item
         android:title="Apply"
         android:icon="@drawable/baseline_license_24"
-        android:id="@+id/licenceNav"/>
+        android:id="@+id/applyNav"/>
     <item
         android:title="Profile"
         android:id="@+id/profileNav"
