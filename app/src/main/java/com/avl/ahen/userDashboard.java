@@ -22,24 +22,38 @@ public class userDashboard extends AppCompatActivity {
         replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.home_nav:
-                    // Replace with your home fragment
-                    replaceFragment(new HomeFragment());
-                    break;
-                case R.id.search_nav:
-                    // Replace with your search fragment
-                    replaceFragment(new SearchFragment());
-                    break;
-                case R.id.apply_nav:
-                    // Replace with your license fragment
-                    replaceFragment(new ApplyFragment());
-                    break;
-                case R.id.profile_nav:
-                    // Replace with your profile fragment
-                    replaceFragment(new ProfileFragment());
-                    break;
+            int itemId = item.getItemId();
+            if (itemId == R.id.home_nav) {
+                // Replace with your home fragment
+                replaceFragment(new HomeFragment());
+            } else if (itemId == R.id.search_nav) {
+                // Replace with your search fragment
+                replaceFragment(new SearchFragment());
+            } else if (itemId == R.id.apply_nav) {
+                // Replace with your license fragment
+                replaceFragment(new ApplyFragment());
+            } else if (itemId == R.id.profile_nav) {
+                // Replace with your profile fragment
+                replaceFragment(new ProfileFragment());
             }
+//            switch (item.getItemId()) {
+//                case R.id.home_nav:
+//                    // Replace with your home fragment
+//                    replaceFragment(new HomeFragment());
+//                    break;
+//                case R.id.search_nav:
+//                    // Replace with your search fragment
+//                    replaceFragment(new SearchFragment());
+//                    break;
+//                case R.id.apply_nav:
+//                    // Replace with your license fragment
+//                    replaceFragment(new ApplyFragment());
+//                    break;
+//                case R.id.profile_nav:
+//                    // Replace with your profile fragment
+//                    replaceFragment(new ProfileFragment());
+//                    break;
+//            }
             return true;
         });
     }
