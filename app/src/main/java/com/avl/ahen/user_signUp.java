@@ -23,12 +23,11 @@ import com.google.firebase.auth.FirebaseUser;
 public class user_signUp extends AppCompatActivity {
     private Button signupBtn;
     private TextView login;
-
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
 
 
-    TextInputEditText usrEmail, usrPassword;
+    TextInputEditText usrEmail, usrPassword, usrName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +35,26 @@ public class user_signUp extends AppCompatActivity {
 
         signupBtn = findViewById(R.id.userSignUpBtn);
         usrEmail = findViewById(R.id.userEmail);
+        usrName = findViewById(R.id.userName);
         usrPassword = findViewById(R.id.userPassword);
         progressBar = findViewById(R.id.progressBar);
         mAuth = FirebaseAuth.getInstance();
+        String userName = usrName.getText().toString();
+
+        // Create a Bundle to store the userName
+        Bundle bundle = new Bundle();
+        bundle.putString("userName", userName);
+
+        // Create a new instance of your fragment
+        ProfileFragment fragment = new ProfileFragment();
+
+        // Set the arguments Bundle to the fragment
+        fragment.setArguments(bundle);
+
+//        // Perform fragment transaction to display the fragment
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.userName, fragment)
+                .commit();
         signupBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -60,6 +76,19 @@ public class user_signUp extends AppCompatActivity {
                                     // Sign in success, update UI with the signed-in user's information
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(user_signUp.this, "Account Created !", Toast.LENGTH_SHORT).show();
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("userName", userName);
+
+                                    // Create a new instance of your fragment
+                                    ProfileFragment fragment = new ProfileFragment();
+
+                                    // Set the arguments Bundle to the fragment
+                                    fragment.setArguments(bundle);
+
+                                   // Perform fragment transaction to display the fragment
+                                    getSupportFragmentManager().beginTransaction()
+                                            .replace(R.id.fragment_container, fragment)
+                                            .commit();
                                     Intent intent = new Intent(user_signUp.this, user_login.class);
                                     startActivity(intent);
                                 } else {

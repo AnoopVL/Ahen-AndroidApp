@@ -36,24 +36,7 @@ public class userDashboard extends AppCompatActivity {
                 // Replace with your profile fragment
                 replaceFragment(new ProfileFragment());
             }
-//            switch (item.getItemId()) {
-//                case R.id.home_nav:
-//                    // Replace with your home fragment
-//                    replaceFragment(new HomeFragment());
-//                    break;
-//                case R.id.search_nav:
-//                    // Replace with your search fragment
-//                    replaceFragment(new SearchFragment());
-//                    break;
-//                case R.id.apply_nav:
-//                    // Replace with your license fragment
-//                    replaceFragment(new ApplyFragment());
-//                    break;
-//                case R.id.profile_nav:
-//                    // Replace with your profile fragment
-//                    replaceFragment(new ProfileFragment());
-//                    break;
-//            }
+
             return true;
         });
     }
